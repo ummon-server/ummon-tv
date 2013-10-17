@@ -1,4 +1,11 @@
-ummon-tv
-========
+Ummon TV - Status Board
+======================
 
-A web client to display an ummon server's status on a TV.
+A status board web app for displaying Ummon stats, preferably on a 46" Samsung Smart TV.
+
+# Setup
+
+```
+$ mv config.example.js config.js
+```
+
