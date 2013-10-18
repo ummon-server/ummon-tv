@@ -5,11 +5,11 @@ Connection successfully established with ummon-server<br>
 There are currently:<br>
 &nbsp;-&nbsp;<span class="white">{{result.totalTasks}}</span> total tasks in <span class="white">{{result.collections.length}}</span> collections<br>
 &nbsp;&nbsp;&nbsp;|-&nbsp;<span class="white">{{result.activeTimers.length}}</span> of which will be triggered by a timer<br>
-&nbsp;-&nbsp;<span class="white">{{result.workers.length}}</span> active workers out of a maximum of <span class="white">{{result.maxWorkers}}</span><br>
+&nbsp;-&nbsp;<span class="white" id="worker-count">{{result.workers.length}}</span> active workers out of a maximum of <span class="white" id="max-workers">{{result.maxWorkers}}</span><br>
    {%- for w in result.workers %}
 &nbsp;&nbsp;&nbsp;|-&nbsp;{{w}}<br>
    {%- endfor %}
-&nbsp;-&nbsp;<span class="white">{{result.queue.length}}</span> tasks in the queue<br>
+&nbsp;-&nbsp;<span class="white" id="queue-count">{{result.queue.length}}</span> tasks in the queue<br>
    {%- for q in result.queue %}
 &nbsp;&nbsp;&nbsp;|-&nbsp;{{q}}<br>
    {%- endfor %}
