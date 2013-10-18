@@ -1,11 +1,8 @@
 body {
-  background: black;
+  background: #fff;
   font: 14px "Andale Mono", Helvetica, Arial, sans-serif;
   color: #03ff00;
 }
 a {
   color: #00B7FF;
-}
-.white {
-  color: white;
 }

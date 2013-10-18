@@ -1,9 +1,9 @@
 module.exports = {
-	server: {
-		url: 'http://123.456.789.01:1234',
-		username: 'username',
-		password: 'password',
-		version: '*',
-		timeout: 1
-	}
+  server: {
+    url: process.env.url || 'http://localhost:8080',
+    username: process.env.username || 'user',
+    password: process.env.password || 'password',
+    version: process.env.version || '*',
+    timeout: process.env.timeout || 1
+  }
 }
